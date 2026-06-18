@@ -1,1 +1,3 @@
-# Python 공부 기록용 입니다.
+# Python
+
+Python 공부 기록용 입니다.
