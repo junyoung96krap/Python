@@ -34,4 +34,4 @@ my_str = url.replace("http://", "") # 규칙 1
 my_str = my_str[:my_str.index(".")] # 규칙 2 my_str 변수 내에서 .위치 직전까지 출력
 # print(my_str)
 password = my_str[:3] + str(len(my_str)) + str(my_str.count("e")) + "!" # 규칙 3
-print(password)
+print("{0} 의 비밀번호는 {1} 입니다.".format(url, password))
