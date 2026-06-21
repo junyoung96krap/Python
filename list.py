@@ -57,3 +57,4 @@ num_list = [5,4,3,2,1]
 mix_list = ["유재석", 30, True]
 num_list.extend(mix_list)
 print(num_list)
+
