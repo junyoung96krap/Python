@@ -1,4 +1,3 @@
-
 # Quiz) 당신의 학교에서는 파이썬 코딩 대회를 주최합니다.
 # 참석률을 높이기 위해 댓글 이벤트를 진행하기로 하였습니다.
 # 댓글 작성자들 중에 추첨을 통해 1명은 치킨, 3명은 커피 쿠폰을 받게 됩니다.
@@ -15,8 +14,19 @@
 #  -- 축하합니다 --
 
 from random import *
-lst = [1,2,3,4,5]
-print(lst) # 원본 리스트
-shuffle(lst) # 리스트를 뒤섞기
-print(lst) # 섞은 후 리스트
-print(sample(lst, 1)) # 리스트 내에서 1개를 무작위로 뽑기
+users = range(1, 21) # 1부터 20까지 숫자를 생성
+# print(type(users))
+users = list(users)
+# print(type(users))
+
+print(users)
+shuffle(users)
+print(users)
+
+winners = sample(users, 4) # 4 명 중에서 1명은 치킨, 3명은 커피
+
+print("-- 당첨자 발표 --")
+print("치킨 당첨자 : {0}".format(winners[0]))
+print("커피 당첨자 : {0}".format(winners[1:]))
+print("-- 축하합니다 --")
+
